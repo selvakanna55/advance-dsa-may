@@ -34,11 +34,11 @@ public class DFSRun {
         visited[curr] = true;
         Queue<Integer> q = new LinkedList<>();
         q.add(curr);
-        while(!q.isEmpty()){
+        while (!q.isEmpty()) {
             int node = q.poll(); // remove element from queue
-            System.out.print(node+" ");
-            for(int i:li[node]){
-                if(!visited[i]){
+            System.out.print(node + " ");
+            for (int i : li[node]) {
+                if (!visited[i]) {
                     visited[i] = true;
                     q.add(i);
                 }
