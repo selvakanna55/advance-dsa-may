@@ -40,7 +40,7 @@ public class Bipartite {
 //        while (!s.isEmpty()) System.out.print(s.pop() + " ");
     }
 
-    private static void topoDFS(int node, ArrayList<Integer>[] adj, Stack<Integer> s) {
+    private static void topoDFS(int node, ArrayList<Integer>[] adj, Stack<Integer> s) { // directed
         visited[node] = true;
         for (Integer i : adj[node]) {
             if (!visited[i]) {
